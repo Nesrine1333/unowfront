@@ -1,9 +1,9 @@
 import "./App.css";
 import { Carousel } from "./components/Carousel";
 import{useEffect} from 'react';
-
+import { Homepage } from "./components/homepage";
 import { slides } from "./data/carouselData.json";
-
+import  {BrowserRouter ,Routes,Route } from "react-router-dom";
 
 
 
@@ -25,7 +25,15 @@ function App() {
 
   return (
     <div className="App">
-      <Carousel data={slides} />
+      {
+        <BrowserRouter>
+          <Routes>
+            <Route path="/homepage" element={<Homepage />} />
+            <Route path="/banner" element={<Carousel />} />
+            <Route path="*" element={<notfound />} />
+          </Routes>
+        </BrowserRouter>
+      }
     </div>
   );
 }
