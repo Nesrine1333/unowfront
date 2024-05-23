@@ -1,0 +1,85 @@
+.containerform{
+  background-color: rgba(255, 255, 255, 0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+width: 40%;
+margin-top: 10vmin;
+margin-left: 10%;
+
+
+
+}
+
+ .submitbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  margin-left: 80%;
+  width: 120px;
+
+ 
+ }
+ .btnsignup{
+    background:rgb(255, 253, 253) ;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius:200px ;
+    box-shadow:2px 3px 20px rgb(0, 0,0,0.14);
+    
+    color:#1C4B82 ;
+    font-weight: bold;
+    font-size: 20px;
+
+ }
+ .home{
+    margin-bottom: 10%;
+    margin-top: 5px;
+   margin-left: 50%;
+   text-decoration: none ;
+  
+ }
+
+.form-control{
+    border: 1px solid rgba(191, 163, 197, 0.68) !important;
+ }
+
+.background{
+   
+    object-fit: scale-down;
+    position:fixed;     z-index: -10000;
+  
+}
+
+.checkbox{
+    display: flex;
+    gap: 2px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .background{
+     
+    position:fixed;   
+      z-index: -10000;
+     
+
+        }
+        .containerform{
+            width: 30%;
+           
+        }
+      
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .background{
+   
+        margin-left: 11%;
+            position:fixed;
+            z-index: -10000;
+        }
+        
+  }
+  
