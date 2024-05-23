@@ -7,6 +7,7 @@ import Notfound from "./components/notfound";
 import  {BrowserRouter ,Routes,Route } from "react-router-dom";
 import { SignUp } from "./components/Signup";
 import Login from "./components/Login";
+import Personnalise from "./components/personalise/Personnalise";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,11 +29,11 @@ function App() {
   // }
 
   return (
-    <div>
-      { <>
+   <>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Homepage/>} />
+            <Route path="/personnalise" element={<Personnalise/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/signup" element={<SignUp/>} />
             <Route path="/" element={<Homepage/>} />
@@ -42,8 +43,7 @@ function App() {
           
         </BrowserRouter>
         </>
-      }
-    </div>
+ 
   );
 }
 

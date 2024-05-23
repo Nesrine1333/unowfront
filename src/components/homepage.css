@@ -58,6 +58,12 @@ position: fixed;
      li{
         text-indent: 10px;
      }
+
+     .button{
+      display: flex;
+      flex-direction:row;
+      gap:50%;
+     }
  @media (max-width: 880px) {
    
     .title{

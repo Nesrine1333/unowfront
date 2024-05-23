@@ -33,7 +33,7 @@ U!NOW IS NOT JUST AN E-LEARNING  PLATFORM, BUT A REVOLUTION IN THE FIELD OF EDUC
 
 </div>
 <div className="button">
-        <a>Personnaliser</a>
+        <Link to='/personnalise'>Personnliser</Link>
     <Link to='/banner'>continue</Link>
     </div>
     </div> 
